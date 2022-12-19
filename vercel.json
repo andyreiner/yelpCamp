@@ -1,7 +1,7 @@
 {
     "functions": {
         "app.js": {
-        "memory": 1025,
+        "memory": 1024,
         "maxDuration": 10
         }
     },
