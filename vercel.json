@@ -8,8 +8,33 @@
         }  
     ],
     "redirects": [
-        { "src": "/routes", "dest": "/(*)" }
+        { "src": "/routes", "dest": "app.js" }
     ],
-    "functions": ["/cloudinary/(*)", "/controllers/(*)", "/scripts/(*)", "/utils(*)"]
+    "functions": {
+    "cloudinary/*": {
+      "memory": 3008,
+      "maxDuration": 30
+    },
+    "controllers/*.js": {
+      "memory": 3008,
+      "maxDuration": 30
+    },
+    "utils/*.js": {
+      "memory": 3008,
+      "maxDuration": 30
+    },
+    "scripts/*.js": {
+      "memory": 3008,
+      "maxDuration": 30
+    },
+    "middleware.js": {
+      "memory": 3008,
+      "maxDuration": 30
+    },
+    "schemas.js": {
+      "memory": 3008,
+      "maxDuration": 30
+    }
+  }
         
 }
