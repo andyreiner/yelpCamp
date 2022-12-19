@@ -1,8 +1,8 @@
 {
   "name": "yelpcamp_mycode",
   "version": "1.0.0",
-  "main": "index.js",
-  "engines": "14.x",
+  "main": "app.js",
+  "engines": "18.x",
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
