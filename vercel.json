@@ -1,13 +1,11 @@
 {
-    "version": 2,
-    "name": "nodejs-express",
-    "builds": [
-        {
-            "src": "app.js",
-            "use": "@now/node"
-        }  
-    ],
-    "routes": [
-        { "src": "/(*)", "dest": "app.js" }
+    "functions": {
+        "app.js": {
+        "memory": 1025,
+        "maxDuration": 10
+        }
+    },
+    "rewrites": [
+        { "source": "/(.*)", "dest": "app.js" }
     ]
 }
