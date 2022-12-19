@@ -3,14 +3,14 @@
     "name": "nodejs-express",
     "builds": [
         {
-            "src": "/views",
+            "src": "app.js",
             "use": "@now/node"
         }  
     ],
-    "routes": [
-        {
-            "src": "/routes",
-            "dest": "/"
-        }
-    ]
+    "redirects": [
+        { "src": "/routes", "dest": "/(*)" },
+        { "src": "/views", "dest": "/(*)" }
+    ],
+    "functions": ["/cloudinary/(*)", "/controllers/(*)", "/scripts/(*)", "/utils(*)"]
+        
 }
