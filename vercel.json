@@ -3,7 +3,7 @@
     "name": "nodejs-express",
     "builds": [
         {
-            "src": "app.js",
+            "src": "/views",
             "use": "@now/node"
         }  
     ],
