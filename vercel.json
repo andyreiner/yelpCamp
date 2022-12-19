@@ -1,11 +1,11 @@
 {
-    "functions": {
-        "app.js": {
-        "memory": 1024,
-        "maxDuration": 10
-        }
-    },
-    "rewrites": [
-        { "source": "/", "destination": "app.js" }
+    "version": 2,
+    "name": "nodejs-express",
+    "builds": [
+        { "src": "*.js", "use": "@vercel/node" },
+        { "src": "*.ejs", "use": "@vercel/ejs" }
+    ],
+    "routes": [
+        { "src": "/(.*)", "dest": "app.js" }
     ]
 }
