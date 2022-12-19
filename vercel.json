@@ -1,5 +1,11 @@
 {
+    "version": 2,
+    "name": "nodejs-express",
+    "builds": [
+        { "src": "*.js", "use": "@vercel/node" },
+        { "src": "*.ejs", "use": "@vercel/ejs" }
+    ],
     "rewrites": [
-        { "source": "/", "destination": "/app.js" }
+        { "source": "/(.*)", "dest": "app.js" }
     ]
 }
