@@ -6,6 +6,6 @@
         }
     },
     "rewrites": [
-        { "source": "/(.*)", "dest": "app.js" }
+        { "source": "/(.*)", "destination": "app.js" }
     ]
 }
