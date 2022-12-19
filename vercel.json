@@ -7,7 +7,7 @@
             "use": "@now/node"
         }  
     ],
-    "redirects": [
+    "routes": [
         { "src": "/routes", "dest": "app.js" }
     ],
     "functions": {
@@ -36,5 +36,4 @@
       "maxDuration": 30
     }
   }
-        
 }
